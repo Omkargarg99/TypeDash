@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "fira code light";
+  background-color: #000000; /* Black background */
+}
+
+.container {
+  max-width: 950px;
+  margin: 5px;
+  width: calc(100% - 10px);
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff; /* White border */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25); /* Light white shadow */
+}
+
+.test {
+  user-select: none;
+}
+
+.input-field {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+}
+
+span {
+  font-size: 20px;
+  user-select: none;
+  cursor: text;
+  color: #ffffff; /* White text */
+  font-weight: 300; /* Lighter font weight */
+}
+
+span.active {
+  border-bottom: 3px solid orange;
+}
+
+.char {
+  font-size: 24px;
+  font-weight: 300; /* Lighter font weight */
+}
+
+.char.correct {
+  color: #6aff6a; /* Greenish color for correct letters */
+}
+
+.char.wrong {
+  color: #ff6347; /* Red text for wrong letters */
+}
+
+.char.active {
+  color: #ffd54f; /* Yellow for the active character */
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  color: #ffffff; /* White text */
+  padding-top: 10px;
+  border-top: 2px solid #ffffff; /* White border */
+}
+
+button.btn {
+  padding: 8px;
+  outline: none;
+  border: 1px solid #ffffff; /* White border */
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff; /* White text */
+  font-size: 15px;
+  background-color: #000000; /* Black button */
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+button.btn:hover {
+  background-color: #222222; /* Darker black on hover */
+}
